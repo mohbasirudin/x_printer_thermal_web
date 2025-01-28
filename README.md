@@ -2,8 +2,9 @@
 
 A package for printing thermal receipts on web using USB.
 
----
 ## Usage
+
+--
 
 ### main.dart
 
@@ -21,7 +22,8 @@ void _onPrint() {
   _printer.printHtmlString(data: data);
 }
 ```
----
+
+--
 
 ## Driver
 
