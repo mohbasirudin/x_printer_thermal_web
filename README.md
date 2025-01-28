@@ -4,8 +4,6 @@ A package for printing thermal receipts on web using USB.
 
 ## Usage
 
---
-
 ### main.dart
 
 Use `html tags` (such as: `<p>, <h1>, <h2>, ... etc`) to style the content you will print
@@ -23,7 +21,7 @@ void _onPrint() {
 }
 ```
 
---
+---
 
 ## Driver
 
