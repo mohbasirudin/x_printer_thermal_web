@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:html' as html;
 
 import 'package:flutter/foundation.dart';
@@ -5,6 +6,11 @@ import 'package:flutter/foundation.dart';
 class XPrinterThermalWeb {
   void printHtmlString({required List<String> data}) {
     try {
+      if (!kIsWeb) {
+        log("your device is not support");
+        return;
+      }
+
       var content = data.join("<br>");
 
       final styleElement = html.StyleElement();
@@ -41,9 +47,7 @@ class XPrinterThermalWeb {
         },
       );
     } catch (e) {
-      if (kDebugMode) {
-        print("error print html string: $e");
-      }
+      log("error print html string: $e");
     }
   }
 }
