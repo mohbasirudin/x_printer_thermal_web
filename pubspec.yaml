@@ -1,7 +1,7 @@
 name: x_printer_thermal_web
-description: "A new Flutter plugin project."
+description: A package for printing thermal receipts on web using USB.
 version: 0.0.1
-homepage:
+homepage: https://github.com/mohbasirudin/x_printer_thermal_web
 
 environment:
   sdk: ^3.5.3
