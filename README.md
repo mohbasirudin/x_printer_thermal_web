@@ -3,10 +3,11 @@
 A package for printing thermal receipts on web using USB.
 
 ---
+## Usage
 
 ### main.dart
 
-Use `html tags` (such as: <p>, <h1>, <h2>, ... etc) to style the content you will print
+Use `html tags` (such as: `<p>, <h1>, <h2>, ... etc`) to style the content you will print
 
 ```dart
 final _printer = XPrinterThermalWeb();
@@ -21,6 +22,8 @@ void _onPrint() {
 }
 ```
 ---
+
+## Driver
 
 if your thermal printer is not detected 
 or you need a driver for your printer, 
